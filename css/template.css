@@ -2487,7 +2487,7 @@ Site Special Menu (section)
 	position:relative;
 	float:left;
 	width:100%;
-	padding-left:130px;
+	padding-left:10px;
 }
 
 .site-menu-main .tab .menu-right-colom .menu-row .menu-row-inner h4{
@@ -3819,7 +3819,7 @@ Site Catering  (section)
 .site-contact .site-google-map {
   /* google map container */
   background: grey;
-  min-height: 620px;
+  height: 620px;
   position: relative;
 }
 

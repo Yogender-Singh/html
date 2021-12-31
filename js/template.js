@@ -397,7 +397,7 @@ jQuery(document).ready(function ($) {
 
         /*-----------------------------------------------------------------------------------*/
         /* Google map for contact form
-         * Source: https://developers.google.com/maps/documentation/javascript/ */
+         * Source: https://developers.google.com/maps/documentation/javascript/ */ //swiper.jquery.min.js.map
         /*-----------------------------------------------------------------------------------*/
         google_map: function (map, marker) {
 
@@ -405,28 +405,10 @@ jQuery(document).ready(function ($) {
             map = new google.maps.Map(this.selector_google_map, {
                 center      : {lat: 44.540, lng: -78.546}, // Center map
                 zoom        : 8,                           // Map zoom level
-                mapTypeId   : "roadmap",                   // Map type
-                zoomControl : true,                        // Map zoom control
-                scaleControl: true,                        // Map scale control
-                scrollwheel : false,                       // Map mouse wheel zoom
-                styles      : [                            // Map custom style
-                    {
-                        stylers: [
-                            {saturation: -1000}
-                        ]
-                    }
-                ]
+               
             });
 
-            // Add map custom marker
-            marker = new google.maps.Marker({
-                position: {lat: 44.540, lng: -78.546},  // Center map
-                map     : map,                          // Map selector
-                icon    : "images/map-marker.png"       // Custom marker image
-            });
-
-            // To add the marker to the map, call setMap();
-            marker.setMap(map);
+            
         },
 
 
